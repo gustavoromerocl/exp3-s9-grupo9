@@ -32,8 +32,8 @@ public class PlaceOrderFunction {
                         final ExecutionContext context) {
 
                 /* -- Topic Config -- */
-                String endpoint = System.getenv("ORDER_EVENTS_TOPIC_ENDPOINT");
-                String key = System.getenv("ORDER_EVENTS_TOPIC_KEY");
+                String endpoint = System.getenv("EVENT_GRID_TOPIC_ENDPOINT");
+                String key = System.getenv("EVENT_GRID_TOPIC_KEY");
 
                 String body = request.getBody();
                 if (body == null || body.isBlank()) {
